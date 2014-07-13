@@ -123,13 +123,13 @@ void loop(void)
     return;
   }
   
-  Serial.println(F("-------------------------------------"));
-  while (client.connected()) {
-    while (client.available()) {
-      char c = client.read();
-      Serial.print(c);
-    }
-  }
+  ///Serial.println(F("-------------------------------------"));
+  ///while (client.connected()) {
+  ///  while (client.available()) {
+  ///    char c = client.read();
+  ///    Serial.print(c);
+   /// }
+  ///}
   client.close();
   Serial.println(F("-------------------------------------"));
   
