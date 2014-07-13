@@ -95,7 +95,7 @@ void loop(void)
   // Print request for debug purposes
   Serial.print("PUT /v2/feeds/");
   Serial.print(feedID);
-  Serial.println(".json HTTP/1.1");
+  Serial.println(".json HTTP/1.0");
   Serial.println("Host: api.xively.com");
   Serial.print("X-ApiKey: ");
   Serial.println(API_key);
