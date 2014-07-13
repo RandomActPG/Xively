@@ -123,20 +123,20 @@ void loop(void)
     return;
   }
   
-  ///Serial.println(F("-------------------------------------"));
-  ///while (client.connected()) {
-  ///  while (client.available()) {
-  ///    char c = client.read();
-  ///    Serial.print(c);
-   /// }
-  ///}
+  Serial.println(F("-------------------------------------"));
+  while (client.connected()) {
+  while (client.available()) {
+  char c = client.read();
+  Serial.print(c);
+    }
+  }
   client.close();
   Serial.println(F("-------------------------------------"));
   
   Serial.println(F("\n\nDisconnecting"));
   cc3000.disconnect();
   
-  // Wait 60 seconds until next update
-  delay(60000);
+  // Wait 10 seconds until next update
+  delay(10000);
   
 }
