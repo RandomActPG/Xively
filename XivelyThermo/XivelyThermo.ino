@@ -136,7 +136,7 @@ void loop(void)
   Serial.println(F("\n\nDisconnecting"));
   cc3000.disconnect();
   
-  // Wait 10 seconds until next update
-  delay(10000);
+  // Wait 60 seconds until next update
+  delay(60000);
   
 }
